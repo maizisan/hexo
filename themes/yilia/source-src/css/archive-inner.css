@@ -1,0 +1,83 @@
+/*
+Syntax error: Undefined mixin 'ellipsis'.
+        on line 49 of themes/yilia/source-src/css/archive-inner.scss, in `ellipsis'
+        from line 49 of themes/yilia/source-src/css/archive-inner.scss
+
+44: 			height: 8px;
+45: 		}
+46: 		h1 {
+47: 			color: #e5e5e5;
+48: 			margin-top: 30px;
+49: 			@include ellipsis;
+50: 		}
+51: 	}
+52: 	.archives-wrap .article-meta .archive-article-date {
+53: 		margin-top: -3px;
+54: 	}
+
+Backtrace:
+themes/yilia/source-src/css/archive-inner.scss:49:in `ellipsis'
+themes/yilia/source-src/css/archive-inner.scss:49
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:253:in `visit_mixin'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:37:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:100:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:53:in `map'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:53:in `visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:121:in `with_environment'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:108:in `visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:37:in `block in visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:320:in `visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:37:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:100:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:53:in `map'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:53:in `visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:121:in `with_environment'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:108:in `visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:37:in `block in visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:320:in `visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:37:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:100:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:53:in `map'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:53:in `visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:121:in `with_environment'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:108:in `visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:37:in `block in visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:320:in `visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:37:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:100:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:53:in `map'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:53:in `visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:121:in `with_environment'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:108:in `visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:37:in `block in visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:128:in `visit_root'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:37:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:100:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:7:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/root_node.rb:20:in `render'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:315:in `_render'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:262:in `render'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:201:in `each'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:235:in `watch'
+/usr/lib/ruby/vendor_ruby/sass/plugin.rb:107:in `method_missing'
+/usr/lib/ruby/vendor_ruby/sass/exec.rb:459:in `watch_or_update'
+/usr/lib/ruby/vendor_ruby/sass/exec.rb:326:in `process_result'
+/usr/lib/ruby/vendor_ruby/sass/exec.rb:41:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/exec.rb:21:in `parse!'
+/usr/bin/sass:8:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined mixin 'ellipsis'.\A         on line 49 of themes/yilia/source-src/css/archive-inner.scss, in `ellipsis'\A         from line 49 of themes/yilia/source-src/css/archive-inner.scss\A \A 44: 			height: 8px;\A 45: 		}\A 46: 		h1 {\A 47: 			color: #e5e5e5;\A 48: 			margin-top: 30px;\A 49: 			@include ellipsis;\A 50: 		}\A 51: 	}\A 52: 	.archives-wrap .article-meta .archive-article-date {\A 53: 		margin-top: -3px;\A 54: 	}"; }

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>html-webpack-plugin | ٩◔̯◔۶|MYONE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="webpack 插件： html-webpack-plugin
+
+这个插件用来简化创建服务于 webpack bundle 的 HTML 文件，尤其是对于在文件名中包含了 hash 值，而这个值在每次编译的时候都发生变化的情况。你既可以让这个插件来帮助你自动生成 HTML 文件，也可以使用 lodash 模板加载生成的 bundles，或者自己加载这些 bundles。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="html-webpack-plugin">
+<meta property="og:url" content="http://litten.github.io/2016/10/25/2016-10-25-1/index.html">
+<meta property="og:site_name" content="٩◔̯◔۶|MYONE">
+<meta property="og:description" content="webpack 插件： html-webpack-plugin
+
+这个插件用来简化创建服务于 webpack bundle 的 HTML 文件，尤其是对于在文件名中包含了 hash 值，而这个值在每次编译的时候都发生变化的情况。你既可以让这个插件来帮助你自动生成 HTML 文件，也可以使用 lodash 模板加载生成的 bundles，或者自己加载这些 bundles。">
+<meta property="og:updated_time" content="2016-12-07T06:18:27.532Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="html-webpack-plugin">
+<meta name="twitter:description" content="webpack 插件： html-webpack-plugin
+
+这个插件用来简化创建服务于 webpack bundle 的 HTML 文件，尤其是对于在文件名中包含了 hash 值，而这个值在每次编译的时候都发生变化的情况。你既可以让这个插件来帮助你自动生成 HTML 文件，也可以使用 lodash 模板加载生成的 bundles，或者自己加载这些 bundles。">
+  
+    <link rel="alternative" href="/atom.xml" title="٩◔̯◔۶|MYONE" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <script src="/style.js"></script>
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+      <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="/avatar/avatar.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">MYONERAY</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">吃素菜，彼此相爱</p>
+		
+
+		<nav class="header-menu">
+			<ul>
+			
+				<li><a href="/">HOME</a></li>
+	        
+				<li><a href="/instagram">PHOTOS</a></li>
+	        
+			</ul>
+		</nav>
+		<nav class="header-smart-menu">
+	        
+    		
+    			
+    			<a class="js-smart-menu" data-idx="0" href="javascript:void(0)">NOTES</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="1" href="javascript:void(0)">TAGS</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="2" href="javascript:void(0)">BOOKMARKS</a>
+    			
+    			
+            
+		</nav>
+		<nav class="header-nav">
+			<div class="social">
+				
+					<a class="github" target="_blank" href="https://github.com/myoneray" title="github">github</a>
+		        
+					<a class="mail" target="_blank" href="/myoneray@gmail.com" title="mail">mail</a>
+		        
+					<a class="weibo" target="_blank" href="http://weibo.com/2102785392" title="weibo">weibo</a>
+		        
+					<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/invi-s" title="zhihu">zhihu</a>
+		        
+			</div>
+		</nav>
+	</header>
+</div>
+
+
+</script>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"><i class="icon-list"></i></div>
+  		<h1 class="header-author js-mobile-header hide">MYONERAY</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				
+					<img src="/avatar/avatar.jpg" class="js-avatar">
+				
+			</div>
+			<hgroup>
+			  <h1 class="header-author">MYONERAY</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">吃素菜，彼此相爱</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">HOME</a></li>
+		        
+					<li><a href="/instagram">PHOTOS</a></li>
+		        
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/myoneray" title="github">github</a>
+			        
+						<a class="mail" target="_blank" href="/myoneray@gmail.com" title="mail">mail</a>
+			        
+						<a class="weibo" target="_blank" href="http://weibo.com/2102785392" title="weibo">weibo</a>
+			        
+						<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/invi-s" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap">
+        <article id="post-2016-10-25-1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      html-webpack-plugin
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p> webpack 插件： html-webpack-plugin</p>
+<blockquote>
+<p>这个插件用来简化创建服务于 webpack bundle 的 HTML 文件，尤其是对于在文件名中包含了 hash 值，而这个值在每次编译的时候都发生变化的情况。你既可以让这个插件来帮助你自动生成 HTML 文件，也可以使用 lodash 模板加载生成的 bundles，或者自己加载这些 bundles。</p>
+</blockquote>
+ <a id="more"></a>
+<p> 插件地址：<a href="https://www.npmjs.com/package/html-webpack-plugin" target="_blank" rel="external">https://www.npmjs.com/package/html-webpack-plugin</a></p>
+<ul>
+<li>使用 npm 安装这个插件: <code>$ npm install html-webpack-plugin@2 --save-dev</code></li>
+<li><p>webpack 配置</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> HtmlWebpackPlugin = <span class="built_in">require</span>(<span class="string">'html-webpack-plugin'</span>)</div><div class="line"><span class="keyword">var</span> webpackConfig = &#123;</div><div class="line">  <span class="attr">entry</span>: <span class="string">'index.js'</span>,</div><div class="line">  <span class="attr">output</span>: &#123;</div><div class="line">    <span class="attr">path</span>: <span class="string">'dist'</span>,</div><div class="line">    <span class="attr">filename</span>: <span class="string">'index_bundle.js'</span></div><div class="line">  &#125;,</div><div class="line">  <span class="attr">plugins</span>: [<span class="keyword">new</span> HtmlWebpackPlugin()]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>这将会自动在 dist 目录中生成一个名为 index.html 的文件，内容如下：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Webpack App<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"index_bundle.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>如果你有多个 webpack 入口点，它们都会被包含在生成的 script 元素中。</p>
+<p>如果有任何的 CSS 资源包含在 webpack 输出中（例如，使用 ExtractTextPlugin 提炼出的 css ），这些将会使用 link 包含在 HTML 页面的 head 元素中。</p>
+<h4 id="详细配置"><a href="#详细配置" class="headerlink" title="详细配置"></a>详细配置</h4><ul>
+<li>title: 用来生成页面的 title 元素</li>
+<li>filename: 输出的 HTML 文件名，默认是 index.html, 也可以直接配置带有子目录。</li>
+<li>template: 模板文件路径，支持加载器，比如 html!./index.html</li>
+<li>inject: true | ‘head’ | ‘body’ | false  ,注入所有的资源到特定的 template 或者 templateContent 中，如果设置为 true 或者 body，所有的 javascript 资源将被放置到 body 元素的底部，’head’ 将放置到 head 元素中。</li>
+<li>favicon: 添加特定的 favicon 路径到输出的 HTML 文件中。</li>
+<li>minify: {} | false , 传递 html-minifier 选项给 minify 输出</li>
+<li>hash: true | false, 如果为 true, 将添加一个唯一的 webpack 编译 hash 到所有包含的脚本和 CSS 文件，对于解除 cache 很有用。</li>
+<li>cache: true | false，如果为 true, 这是默认值，仅仅在文件修改之后才会发布文件。</li>
+<li>showErrors: true | false, 如果为 true, 这是默认值，错误信息会写入到 HTML 页面中</li>
+<li>chunks: 允许只添加某些块 (比如，仅仅 unit test 块)</li>
+<li>chunksSortMode: 允许控制块在添加到页面之前的排序方式，支持的值：’none’ | ‘default’ | {function}-default:’auto’</li>
+<li>excludeChunks: 允许跳过某些块，(比如，跳过单元测试的块)</li>
+</ul>
+<blockquote>
+<p>下面的示例演示了如何使用这些配置。<br><figure class="highlight less"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  <span class="attribute">entry</span>: <span class="string">'index.js'</span>,</div><div class="line">  <span class="attribute">output</span>: &#123;</div><div class="line">    <span class="attribute">path</span>: <span class="string">'dist'</span>,</div><div class="line">    <span class="attribute">filename</span>: <span class="string">'index_bundle.js'</span>,</div><div class="line">    <span class="attribute">hash</span>: true</div><div class="line">  &#125;,</div><div class="line">  <span class="attribute">plugins</span>: [</div><div class="line">    new HtmlWebpackPlugin(&#123;</div><div class="line">      <span class="attribute">title</span>: <span class="string">'My App'</span>,</div><div class="line">      <span class="attribute">filename</span>: <span class="string">'assets/admin.html'</span></div><div class="line">    &#125;)</div><div class="line">  ]</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+</blockquote>
+<h4 id="生成多个-HTML-文件"><a href="#生成多个-HTML-文件" class="headerlink" title="生成多个 HTML 文件"></a>生成多个 HTML 文件</h4><p>通过在配置文件中添加多次这个插件，来生成多个 HTML 文件。<br><figure class="highlight less"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  <span class="attribute">entry</span>: <span class="string">'index.js'</span>,</div><div class="line">  <span class="attribute">output</span>: &#123;</div><div class="line">    <span class="attribute">path</span>: <span class="string">'dist'</span>,</div><div class="line">    <span class="attribute">filename</span>: <span class="string">'index_bundle.js'</span></div><div class="line">  &#125;,</div><div class="line">  <span class="attribute">plugins</span>: [</div><div class="line">    new HtmlWebpackPlugin(), <span class="comment">// Generates default index.html</span></div><div class="line">    new HtmlWebpackPlugin(&#123;  <span class="comment">// Also generate a test.html</span></div><div class="line">      <span class="attribute">filename</span>: <span class="string">'test.html'</span>,</div><div class="line">      <span class="attribute">template</span>: <span class="string">'src/assets/test.html'</span></div><div class="line">    &#125;)</div><div class="line">  ]</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h4 id="编写自定义模板"><a href="#编写自定义模板" class="headerlink" title="编写自定义模板"></a>编写自定义模板</h4><p>如果默认生成的 HTML 文件不适合你的需要看，可以创建自己定义的模板。方便的方式是通过 inject 选项，然后传递给定制的 HTML 文件。html-webpack-plugin 将会自动注入所有需要的 CSS, js, manifest 和 favicon 文件到标记中。<br><figure class="highlight less"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">plugins</span>: [</div><div class="line">  new HtmlWebpackPlugin(&#123;</div><div class="line">    <span class="attribute">title</span>: <span class="string">'Custom template'</span>,</div><div class="line">    <span class="attribute">template</span>: <span class="string">'my-index.html'</span>, <span class="comment">// Load a custom template</span></div><div class="line">    <span class="attribute">inject</span>: <span class="string">'body'</span> <span class="comment">// Inject all scripts into the body</span></div><div class="line">  &#125;)</div><div class="line">]</div></pre></td></tr></table></figure></p>
+<p>my-index.html 文件<br><figure class="highlight erb"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="xml"><span class="meta">&lt;!DOCTYPE html&gt;</span></span></div><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Content-type"</span> <span class="attr">content</span>=<span class="string">"text/html; charset=utf-8"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;<span class="name">%=</span></span><span class="ruby"> htmlWebpackPlugin.options.title </span><span class="xml"><span class="tag">%&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span></div><div class="line">  <span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p>如果你有模板加载器，可以使用它来解析这个模板。<br><figure class="highlight groovy"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="string">module:</span> &#123;</div><div class="line"><span class="symbol">  loaders:</span> [</div><div class="line">    &#123; <span class="string">test:</span> <span class="regexp">/\.hbs$/</span>, <span class="string">loader:</span> <span class="string">"handlebars"</span> &#125;</div><div class="line">  ]</div><div class="line">&#125;,</div><div class="line"><span class="string">plugins:</span> [</div><div class="line">  <span class="keyword">new</span> HtmlWebpackPlugin(&#123;</div><div class="line"><span class="symbol">    title:</span> <span class="string">'Custom template using Handlebars'</span>,</div><div class="line"><span class="symbol">    template:</span> <span class="string">'my-index.hbs'</span>,</div><div class="line"><span class="symbol">    inject:</span> <span class="string">'body'</span></div><div class="line">  &#125;)</div><div class="line">]</div></pre></td></tr></table></figure></p>
+<p>另外，如果你的模式是一个字符串，可以使用 templateContent 传递它。<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="attr">plugins:</span> [</div><div class="line">  new HtmlWebpackPlugin(&#123;</div><div class="line"><span class="attr">    inject:</span> <span class="literal">true</span>,</div><div class="line"><span class="attr">    templateContent:</span> templateContentString</div><div class="line">  &#125;)</div><div class="line">]</div></pre></td></tr></table></figure></p>
+<p>如果 inject 特性不适合你的需要，你希望完全控制资源放置。 可以直接使用 lodash 语法，使用  default template 作为起点创建自己的模板。</p>
+<p>templateContent 选项也可以是一个函数，以便使用其它语言，比如 jade：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">plugins: [</div><div class="line">  <span class="keyword">new</span> HtmlWebpackPlugin(&#123;</div><div class="line">    <span class="attr">templateContent</span>: <span class="function"><span class="keyword">function</span>(<span class="params">templateParams, compilation</span>) </span>&#123;</div><div class="line">      <span class="comment">// Return your template content synchronously here</span></div><div class="line">      <span class="keyword">return</span> <span class="string">'..'</span>;</div><div class="line">    &#125;</div><div class="line">  &#125;)</div><div class="line">]</div></pre></td></tr></table></figure></p>
+<p>或者异步版本<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">plugins: [</div><div class="line">  <span class="keyword">new</span> HtmlWebpackPlugin(&#123;</div><div class="line">    <span class="attr">templateContent</span>: <span class="function"><span class="keyword">function</span>(<span class="params">templateParams, compilation, callback</span>) </span>&#123;</div><div class="line">      <span class="comment">// Return your template content asynchronously here</span></div><div class="line">      callback(<span class="literal">null</span>, <span class="string">'..'</span>);</div><div class="line">    &#125;</div><div class="line">  &#125;)</div><div class="line">]</div></pre></td></tr></table></figure></p>
+<blockquote>
+<p>注意，如果同时使用 template 和 templateContent ，插件会抛出错误。</p>
+</blockquote>
+<ul>
+<li>htmlWebpackPlugin: 这个插件的相关数据</li>
+<li>htmlWebpackPlugin.files: 资源的块名，来自 webpack 的 stats 对象，包含来自 entry 的从 entry point name 到 bundle 文件名映射。<figure class="highlight xquery"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="string">"htmlWebpackPlugin"</span>: &#123;</div><div class="line">  <span class="string">"files"</span>: &#123;</div><div class="line">    <span class="string">"css"</span>: [ <span class="string">"main.css"</span> ],</div><div class="line">    <span class="string">"js"</span>: [ <span class="string">"assets/head_bundle.js"</span>, <span class="string">"assets/main_bundle.js"</span>],</div><div class="line">    <span class="string">"chunks"</span>: &#123;</div><div class="line">      <span class="string">"head"</span>: &#123;</div><div class="line">        <span class="string">"entry"</span>: <span class="string">"assets/head_bundle.js"</span>,</div><div class="line">        <span class="string">"css"</span>: [ <span class="string">"main.css"</span> ]</div><div class="line">      &#125;,</div><div class="line">      <span class="string">"main"</span>: &#123;</div><div class="line">        <span class="string">"entry"</span>: <span class="string">"assets/main_bundle.js"</span>,</div><div class="line">        <span class="string">"css"</span>: []</div><div class="line">      &#125;,</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>如果在 webpack 配置文件中，你配置了 publicPath，将会反射正确的资源</p>
+<ul>
+<li>htmlWebpackPlugin.options: 传递给插件的配置。</li>
+<li>webpack: webpack 的 stats 对象。</li>
+<li>webpackConfig: webpack 配置信息。</li>
+</ul>
+<h4 id="过滤块"><a href="#过滤块" class="headerlink" title="过滤块"></a>过滤块</h4><p>可以使用 chunks 来限定特定的块。<br><figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">plugin<span class="variable">s:</span> [</div><div class="line">  <span class="keyword">new</span> HtmlWebpackPlugin(&#123;</div><div class="line">    chunk<span class="variable">s:</span> [<span class="string">'app'</span>]</div><div class="line">  &#125;)</div><div class="line">]</div></pre></td></tr></table></figure></p>
+<p>还可以使用 excludeChunks 来排除特定块。<br><figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">plugin<span class="variable">s:</span> [</div><div class="line">  <span class="keyword">new</span> HtmlWebpackPlugin(&#123;</div><div class="line">    excludeChunk<span class="variable">s:</span> [<span class="string">'dev-helper'</span>]</div><div class="line">  &#125;)</div><div class="line">]</div></pre></td></tr></table></figure></p>
+<h4 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h4><p>通过事件允许其它插件来扩展 HTML。</p>
+<ul>
+<li>html-webpack-plugin-before-html-processing</li>
+<li>html-webpack-plugin-after-html-processing</li>
+<li>html-webpack-plugin-after-emit<br>使用方式：<figure class="highlight haxe"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">compilation.plugin(<span class="string">'html-webpack-plugin-before-html-processing'</span>, <span class="function"><span class="keyword">function</span></span>(htmlPluginData, <span class="keyword">callback</span>) &#123;</div><div class="line">  htmlPluginData.html += <span class="string">'The magic footer'</span>;</div><div class="line">  <span class="keyword">callback</span>();</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="完整的插件代码如下所示。"><a href="#完整的插件代码如下所示。" class="headerlink" title="完整的插件代码如下所示。"></a>完整的插件代码如下所示。</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">MyPlugin</span>(<span class="params">options</span>) </span>&#123;</div><div class="line"><span class="keyword">this</span>.options = options;</div><div class="line">&#125;</div><div class="line"></div><div class="line">MyPlugin.prototype.apply = <span class="function"><span class="keyword">function</span>(<span class="params">compiler</span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> paths = <span class="keyword">this</span>.options.paths;</div><div class="line">    compiler.plugin(<span class="string">'compilation'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">compilation, options</span>) </span>&#123;</div><div class="line">        compilation.plugin(<span class="string">'html-webpack-plugin-before-html-processing'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">htmlPluginData, callback</span>) </span>&#123;</div><div class="line">            <span class="keyword">for</span> (<span class="keyword">var</span> i = paths.length - <span class="number">1</span>; i &gt;= <span class="number">0</span>; i--) &#123;</div><div class="line">                htmlPluginData.assets.js.unshift(paths[i]);</div><div class="line">            &#125;</div><div class="line">            callback(<span class="literal">null</span>, htmlPluginData);</div><div class="line">        &#125;);</div><div class="line">    &#125;);</div><div class="line">&#125;;</div><div class="line"></div><div class="line"><span class="built_in">module</span>.exports = MyPlugin;</div></pre></td></tr></table></figure>
+<p>最后一行是导出我们的插件。</p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/10/25/2016-10-25-1/" class="archive-article-date">
+  	<time datetime="2016-10-25T01:38:04.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-10-25</time>
+</a>
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/html-webpack-plugin/">html-webpack-plugin</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/webpack/">webpack</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前段/">前段</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/框架搭建/">框架搭建</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/笔记/">笔记</a></li></ul>
+	</div>
+
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2016/11/08/2016-11-08/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Material设置当前字体为主题默认颜色
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/10/25/2016-10-25/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">修改仓库地址</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 MYONERAY
+    	</div>
+      	<div class="footer-right">
+    		欢迎来到<a href="https://myone.me" target="_blank">MYONE的个人主页</a>
+      	</div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: false,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: "/",
+		innerArchive: true
+	}
+</script>
+
+<script src="/./main.js"></script>
+
+
+    
+<div class="tools-col">
+  <ul class="btn-wrap">
+    
+      <li class="chose" data-hook="tools-section-all"><span class="text">全部</span><i class="icon-book"></i></li>
+    
+    
+      <li data-hook="tools-section-tag"><span class="text">标签</span><i class="icon-price-tags"></i></li>
+    
+    
+      <li data-hook="tools-section-friends"><span class="text">友链</span><i class="icon-link"></i></li>
+    
+    
+  </ul>
+  <div class="tools-wrap">
+    
+    	<section class="tools-section tools-section-all chose">
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-tag">
+    			<div class="widget tagcloud" id="js-tagcloud">
+    				<a href="/tags/Angular/" style="font-size: 16px;">Angular</a> <a href="/tags/Angular-Material/" style="font-size: 12px;">Angular Material</a> <a href="/tags/Bootstrap/" style="font-size: 10px;">Bootstrap</a> <a href="/tags/Dynamic-Themes/" style="font-size: 10px;">Dynamic Themes</a> <a href="/tags/ES6/" style="font-size: 10px;">ES6</a> <a href="/tags/Editor/" style="font-size: 10px;">Editor</a> <a href="/tags/GIT/" style="font-size: 10px;">GIT</a> <a href="/tags/HTML5/" style="font-size: 10px;">HTML5</a> <a href="/tags/SSH/" style="font-size: 10px;">SSH</a> <a href="/tags/Themes/" style="font-size: 10px;">Themes</a> <a href="/tags/angular基础/" style="font-size: 12px;">angular基础</a> <a href="/tags/html-webpack-plugin/" style="font-size: 10px;">html-webpack-plugin</a> <a href="/tags/ngController/" style="font-size: 10px;">ngController</a> <a href="/tags/node/" style="font-size: 14px;">node</a> <a href="/tags/note/" style="font-size: 10px;">note</a> <a href="/tags/npm/" style="font-size: 12px;">npm</a> <a href="/tags/nvm/" style="font-size: 10px;">nvm</a> <a href="/tags/ui-router/" style="font-size: 10px;">ui-router</a> <a href="/tags/webpack/" style="font-size: 18px;">webpack</a> <a href="/tags/前段/" style="font-size: 20px;">前段</a> <a href="/tags/博客/" style="font-size: 12px;">博客</a> <a href="/tags/数据绑定/" style="font-size: 10px;">数据绑定</a> <a href="/tags/框架搭建/" style="font-size: 14px;">框架搭建</a> <a href="/tags/笔记/" style="font-size: 14px;">笔记</a> <a href="/tags/经验/" style="font-size: 12px;">经验</a>
+    			</div>
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-friends">
+  		
+  			<div class="friends-wrap" id="js-friends">
+  			
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.uisdc.com/">uisdc</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="https://www.transparenttextures.com/">transparenttextures</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.michellechang.com/">michellechang</a>
+  	        
+  	        </div>
+  		
+    	</section>
+    
+
+    
+  </div>
+  
+</div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+  </div>
+</body>
+</html>

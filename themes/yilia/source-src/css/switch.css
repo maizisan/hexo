@@ -1,0 +1,42 @@
+@keyframes smile {
+  0% {
+    margin-left: -26px; }
+
+  20% {
+    margin-left: -52px; }
+
+  40% {
+    margin-left: -78px; }
+
+  60% {
+    margin-left: -104px; }
+
+  80% {
+    margin-left: -130px; }
+
+  100% {
+    margin-left: -26px; } }
+
+.switch-btn {
+  margin-left: 74px;
+  margin-top: 23px;
+  position: relative;
+  width: 70px;
+  text-align: center; }
+  .switch-btn .wrap {
+    height: 26px;
+    width: 26px;
+    line-height: 26px;
+    border-radius: 100px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center; }
+    .switch-btn .wrap .wrap-line {
+      width: 1000px;
+      height: 100%; }
+    .switch-btn .wrap .icon {
+      font-size: 26px;
+      color: #5d5d5d;
+      float: left; }

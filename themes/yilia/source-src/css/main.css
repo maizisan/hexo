@@ -1,0 +1,105 @@
+/*
+Syntax error: Invalid CSS after "...          (text": expected ")", was ": #999, bg: #e3..."
+        on line 26 of themes/yilia/source-src/css/core/_variables.scss
+        from line 18 of themes/yilia/source-src/css/_function.scss
+        from line 18 of themes/yilia/source-src/css/_core.scss
+        from line 1 of themes/yilia/source-src/css/global.scss
+        from line 1 of themes/yilia/source-src/css/main.scss
+
+21: $colorText:                      #333 !default;
+22: $colorBg:                        #fff !default;
+23: $colorBorder:                    #dbdbdb !default;
+24: $colorLink:                      #08c !default;
+25: $colorPlaceholder:               #999 !default; // input placeholder color
+26: $colorDisabled:                  (text: #999, bg: #e3e3e3, border: #dbdbdb) !default; // textColor bgColor borderColor
+27: $colorOverlay:                   rgba(0,0,0,.7) !default; // 遮罩层颜色
+28: 
+29: 
+30: // 基本颜色
+31: // color function : http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html
+
+Backtrace:
+themes/yilia/source-src/css/core/_variables.scss:26
+themes/yilia/source-src/css/_function.scss:18
+themes/yilia/source-src/css/_core.scss:18
+themes/yilia/source-src/css/global.scss:1
+themes/yilia/source-src/css/main.scss:1
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1148:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/script/lexer.rb:199:in `expected!'
+/usr/lib/ruby/vendor_ruby/sass/script/parser.rb:476:in `assert_tok'
+/usr/lib/ruby/vendor_ruby/sass/script/parser.rb:426:in `paren'
+/usr/lib/ruby/vendor_ruby/sass/script/parser.rb:411:in `special_fun'
+/usr/lib/ruby/vendor_ruby/sass/script/parser.rb:406:in `raw'
+/usr/lib/ruby/vendor_ruby/sass/script/parser.rb:330:in `funcall'
+/usr/lib/ruby/vendor_ruby/sass/script/parser.rb:319:in `ident'
+/usr/lib/ruby/vendor_ruby/sass/script/parser.rb:228:in `unary_not'
+/usr/lib/ruby/vendor_ruby/sass/script/parser.rb:228:in `unary_div'
+/usr/lib/ruby/vendor_ruby/sass/script/parser.rb:228:in `unary_minus'
+/usr/lib/ruby/vendor_ruby/sass/script/parser.rb:228:in `unary_plus'
+/usr/lib/ruby/vendor_ruby/sass/script/parser.rb:209:in `times_div_or_mod'
+/usr/lib/ruby/vendor_ruby/sass/script/parser.rb:209:in `plus_or_minus'
+/usr/lib/ruby/vendor_ruby/sass/script/parser.rb:209:in `relational'
+/usr/lib/ruby/vendor_ruby/sass/script/parser.rb:209:in `eq_or_neq'
+/usr/lib/ruby/vendor_ruby/sass/script/parser.rb:209:in `and_expr'
+/usr/lib/ruby/vendor_ruby/sass/script/parser.rb:209:in `or_expr'
+/usr/lib/ruby/vendor_ruby/sass/script/parser.rb:298:in `space'
+/usr/lib/ruby/vendor_ruby/sass/script/parser.rb:283:in `interpolation'
+/usr/lib/ruby/vendor_ruby/sass/script/parser.rb:246:in `expr'
+/usr/lib/ruby/vendor_ruby/sass/script/parser.rb:470:in `assert_expr'
+/usr/lib/ruby/vendor_ruby/sass/script/parser.rb:49:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1021:in `sass_script'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:513:in `variable'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:552:in `block_child'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:545:in `block_contents'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:82:in `stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:27:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:342:in `_to_tree'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:274:in `to_tree'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:225:in `visit_import'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:37:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:100:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:227:in `block in visit_import'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:227:in `map'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:227:in `visit_import'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:37:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:100:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:227:in `block in visit_import'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:227:in `map'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:227:in `visit_import'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:37:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:100:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:227:in `block in visit_import'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:227:in `map'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:227:in `visit_import'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:37:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:100:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:53:in `map'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:53:in `visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:121:in `with_environment'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:108:in `visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:37:in `block in visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:128:in `visit_root'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:37:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:100:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:7:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/root_node.rb:20:in `render'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:315:in `_render'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:262:in `render'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:201:in `each'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:235:in `watch'
+/usr/lib/ruby/vendor_ruby/sass/plugin.rb:107:in `method_missing'
+/usr/lib/ruby/vendor_ruby/sass/exec.rb:459:in `watch_or_update'
+/usr/lib/ruby/vendor_ruby/sass/exec.rb:326:in `process_result'
+/usr/lib/ruby/vendor_ruby/sass/exec.rb:41:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/exec.rb:21:in `parse!'
+/usr/bin/sass:8:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"...          (text\": expected \")\", was \": #999, bg: #e3...\"\A         on line 26 of themes/yilia/source-src/css/core/_variables.scss\A         from line 18 of themes/yilia/source-src/css/_function.scss\A         from line 18 of themes/yilia/source-src/css/_core.scss\A         from line 1 of themes/yilia/source-src/css/global.scss\A         from line 1 of themes/yilia/source-src/css/main.scss\A \A 21: $colorText:                      #333 !default;\A 22: $colorBg:                        #fff !default;\A 23: $colorBorder:                    #dbdbdb !default;\A 24: $colorLink:                      #08c !default;\A 25: $colorPlaceholder:               #999 !default; // input placeholder color\A 26: $colorDisabled:                  (text: #999, bg: #e3e3e3, border: #dbdbdb) !default; // textColor bgColor borderColor\A 27: $colorOverlay:                   rgba(0,0,0,.7) !default; // 遮罩层颜色\A 28: \A 29: \A 30: // 基本颜色\A 31: // color function : http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html"; }

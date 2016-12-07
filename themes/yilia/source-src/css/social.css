@@ -1,0 +1,76 @@
+.header-nav {
+  width: 100%;
+  position: absolute;
+  transition: transform .3s ease-in; }
+  .header-nav .social {
+    margin-right: 15px;
+    margin-top: 10px;
+    text-align: center; }
+    .header-nav .social a {
+      border-radius: 50%;
+      display: -moz-inline-stack;
+      display: inline-block;
+      vertical-align: middle;
+      *vertical-align: auto;
+      zoom: 1;
+      *display: inline;
+      text-indent: -9999px;
+      margin: 0 8px 15px 8px;
+      opacity: 0.7;
+      width: 28px;
+      height: 28px;
+      transition: 0.3s; }
+      .header-nav .social a:hover {
+        opacity: 1; }
+    .header-nav .social a:last-of-type {
+      margin-right: 0; }
+    .header-nav .social a.weibo {
+      background: url("./img/weibo.png") center no-repeat #aaaaff;
+      border: 1px solid #aaaaff; }
+      .header-nav .social a.weibo:hover {
+        border: 1px solid #aaaaff; }
+    .header-nav .social a.rss {
+      background: url("./img/rss.png") center no-repeat #ef7522;
+      border: 1px solid #ef7522; }
+      .header-nav .social a.rss:hover {
+        border: 1px solid #cf5d0f; }
+    .header-nav .social a.github {
+      background: url("./img/github.png") center no-repeat #afb6ca;
+      border: 1px solid #afb6ca; }
+      .header-nav .social a.github:hover {
+        border: 1px solid #909ab6; }
+    .header-nav .social a.facebook {
+      background: url("./img/facebook.png") center no-repeat #3b5998;
+      border: 1px solid #3b5998; }
+      .header-nav .social a.facebook:hover {
+        border: 1px solid #2d4373; }
+    .header-nav .social a.google {
+      background: url("./img/google.png") center no-repeat #c83d20;
+      border: 1px solid #c83d20; }
+      .header-nav .social a.google:hover {
+        border: 1px solid #9c3019; }
+    .header-nav .social a.twitter {
+      background: url("./img/twitter.png") center no-repeat #55cff8;
+      border: 1px solid #55cff8; }
+      .header-nav .social a.twitter:hover {
+        border: 1px solid #24c1f6; }
+    .header-nav .social a.linkedin {
+      background: url("./img/linkedin.png") center no-repeat #005a87;
+      border: 1px solid #005a87; }
+      .header-nav .social a.linkedin:hover {
+        border: 1px solid #006b98; }
+    .header-nav .social a.zhihu {
+      background: url("./img/zhihu.png") center no-repeat #0078d8;
+      border: 1px solid #0078d8; }
+      .header-nav .social a.zhihu:hover {
+        border: 1px solid #0078d8; }
+    .header-nav .social a.douban {
+      background: url("./img/douban.png") center no-repeat #06c611;
+      border: 1px solid #06c611; }
+      .header-nav .social a.douban:hover {
+        border: 1px solid #06c611; }
+    .header-nav .social a.mail {
+      background: url("./img/mail.png") center no-repeat #005a87;
+      border: 1px solid #005a87; }
+      .header-nav .social a.mail:hover {
+        border: 1px solid #006b98; }

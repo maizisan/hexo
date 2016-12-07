@@ -1,0 +1,67 @@
+/*
+Syntax error: Undefined variable: "$articlePadding".
+        on line 141 of themes/yilia/source-src/css/article-main.scss
+
+136: 	margin: 10px 0 0 0;
+137: 	float: right;
+138: }
+139: .article-info-index.article-info{
+140: 	padding-top: 20px;
+141: 	margin: 30px $articlePadding 0 $articlePadding;
+142:   min-height: 72px;
+143:   border-top: 1px solid #ddd;
+144: }
+145: .article-info-post.article-info{
+146: 	padding: 0;
+
+Backtrace:
+themes/yilia/source-src/css/article-main.scss:141
+/usr/lib/ruby/vendor_ruby/sass/script/variable.rb:49:in `_perform'
+/usr/lib/ruby/vendor_ruby/sass/script/node.rb:40:in `perform'
+/usr/lib/ruby/vendor_ruby/sass/script/list.rb:71:in `block in _perform'
+/usr/lib/ruby/vendor_ruby/sass/script/list.rb:71:in `map'
+/usr/lib/ruby/vendor_ruby/sass/script/list.rb:71:in `_perform'
+/usr/lib/ruby/vendor_ruby/sass/script/node.rb:40:in `perform'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:298:in `visit_prop'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:37:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:100:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:53:in `map'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:53:in `visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:121:in `with_environment'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:108:in `visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:37:in `block in visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:320:in `visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:37:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:100:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:53:in `map'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:53:in `visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:121:in `with_environment'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:108:in `visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:37:in `block in visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:128:in `visit_root'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:37:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:100:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:7:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/root_node.rb:20:in `render'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:315:in `_render'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:262:in `render'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:201:in `each'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:235:in `watch'
+/usr/lib/ruby/vendor_ruby/sass/plugin.rb:107:in `method_missing'
+/usr/lib/ruby/vendor_ruby/sass/exec.rb:459:in `watch_or_update'
+/usr/lib/ruby/vendor_ruby/sass/exec.rb:326:in `process_result'
+/usr/lib/ruby/vendor_ruby/sass/exec.rb:41:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/exec.rb:21:in `parse!'
+/usr/bin/sass:8:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined variable: \"$articlePadding\".\A         on line 141 of themes/yilia/source-src/css/article-main.scss\A \A 136: 	margin: 10px 0 0 0;\A 137: 	float: right;\A 138: }\A 139: .article-info-index.article-info{\A 140: 	padding-top: 20px;\A 141: 	margin: 30px $articlePadding 0 $articlePadding;\A 142:   min-height: 72px;\A 143:   border-top: 1px solid #ddd;\A 144: }\A 145: .article-info-post.article-info{\A 146: 	padding: 0;"; }
