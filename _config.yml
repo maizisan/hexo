@@ -89,14 +89,14 @@ disqus_shortname:
 #  - hexo-generator-baidu-sitemap
 #  - hexo-generator-sitemap
 
-theme: yilia
+theme: magnetic
 exclude_generator:
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:myoneray/myoneray.github.com.git
+  repo: https://github.com/wangmingcc/wangmingcc.github.com.git
   branch: master
 
 sitemap:
